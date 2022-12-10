@@ -60,7 +60,7 @@ func TestNewClienteset(t *testing.T) {
 		path string
 		err  bool
 	}{
-		{"this_path_should_fail", true},
+		{random.UniqueId(), true},
 		{emptyF.Name(), true},
 		{fullF.Name(), false},
 	}
